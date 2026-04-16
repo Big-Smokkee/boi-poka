@@ -1,11 +1,16 @@
 import React from 'react';
-
+import { Link, NavLink } from 'react-router';
+import './Navbar.css'
 const Navbar = () => {
     const links = <div className='block md:flex gap-3'>
-        <li className='p-2 hover:border border-green-400  rounded-xl'>Home</li>
-        <li className='p-2 hover:border border-green-400  rounded-xl'>Listed Books</li>
-        <li className='p-2 hover:border border-green-400  rounded-xl'>Pages to read</li>
-    </div>
+        {/* <li className='p-2 hover:border border-green-400  rounded-xl'>Home</li> */}
+        {/* <Link className='p-2 hover:border border-green-400  rounded-xl' to='/'>Home</Link> */}
+        {/* <Link className='p-2 hover:border border-green-400  rounded-xl' to='/about'>About</Link> */}
+        {/* <li className='p-2 hover:border border-green-400  rounded-xl'>About</li> */}
+        <NavLink className='' to='/'>Home</NavLink>
+        <NavLink className='' to='/about'>About</NavLink>
+    </div >
+
     return (
         <div className="navbar  shadow-sm px-32.5 text-black work">
             <div className="navbar-start ">
