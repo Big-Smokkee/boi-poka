@@ -15,9 +15,11 @@ const Books = ({ data }) => {
     return (
         <div className='px-30.5 text-4xl playfair'>
             <h2 className='mb-9 text-center'>Books</h2>
-            <Suspense fallback={<span>Loading...</span>}>
-                {data.map(book => <Book book={book} key={book.bookId}></Book>)}
-            </Suspense>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 space-x-4 space-y-5'>
+                <Suspense fallback={<span>Loading...</span>}>
+                    {data.map(book => <Book book={book} key={book.bookId}></Book>)}
+                </Suspense>
+            </div>
 
         </div>
     );
