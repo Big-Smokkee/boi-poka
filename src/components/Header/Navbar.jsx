@@ -9,6 +9,7 @@ const Navbar = () => {
         {/* <li className='p-2 hover:border border-green-400  rounded-xl'>About</li> */}
         <NavLink className='' to='/'>Home</NavLink>
         <NavLink className='' to='/about'>About</NavLink>
+        <NavLink className='' to='/readList'>Read List</NavLink>
     </div >
 
     return (
